@@ -1,1 +1,12 @@
-
+<div class="container">
+  <div class="row">
+    <div class="col-6 mt-5">
+      <app-user-interface [result]="result"></app-user-interface>
+    </div>
+    <div class="col-6">
+      <app-prompt-input (result)="handleResult($event)"></app-prompt-input>
+      <hr />
+      <app-html-response [code]="result"></app-html-response>
+    </div>
+  </div>
+</div>

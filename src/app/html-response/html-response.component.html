@@ -1,0 +1,6 @@
+<div class="respone">
+  <button class="copy-btn" (click)="copyCode()">Copy Code</button>
+  <pre>
+    <code #codeElement [highlight]="code" [languages]="['html']"  [lineNumbers]="true"></code>
+</pre>
+</div>
